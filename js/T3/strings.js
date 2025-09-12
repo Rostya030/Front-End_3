@@ -12,3 +12,18 @@ console.log(nama[8]);
 console.log(nama[9]);
 console.log(nama[10]);
 console.log(nama.length)
+
+const nana = "☭YA>_";
+console.log(nana);
+
+let lastName = "PELMEN☭";
+console.log(lastName);
+const message = prompt("Введiть свою почту");
+
+if (message.includes("@gmail.com")) {
+  console.log("OK");
+}
+
+else {
+  console.log("Error");
+}
