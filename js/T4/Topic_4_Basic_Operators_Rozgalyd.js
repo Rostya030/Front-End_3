@@ -11,19 +11,17 @@ else {
 
 
 
-const numberZero = prompt("Введiть число")
-const raxyvalnik = number >= 10;
+const numberZero = prompt("Введiть число");
+const raxyvalnik = numberZero >= 10;
 console.log(raxyvalnik);
 
 
 
 const numberOne = Number(prompt("Введіть число:"));
 
-if (number >= 10 && number <= 20) {
+if (numberOne >= 10 && numberOne <= 20) {
   console.log("Число входить в діапазон від 10 до 20");
-} 
-
-else {
+} else {
   console.log("Число не входить в діапазон від 10 до 20");
 }
 
@@ -57,8 +55,9 @@ const isPasswordValid = password !== null && password.length >= 6;
 // Перевірка всіх умов
 if (isNameValid && isEmailValid && isPasswordValid) {
   console.log("Перенаправлення на іншу сторінку");
-} 
-
-else {
+  console.log(`Ваше ім'я: ${mamename}`);
+  console.log(`Ваша пошта: ${email}`);
+  console.log(`Ваш пароль: ${password}`);
+} else {
   console.log("Помилка: неправильне заповнення");
 }
