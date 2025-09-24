@@ -1,3 +1,5 @@
+console.log("Тема 3 Д\З!");
+
 const result = 5 + 5 + '5';
 console.log(typeof result);
 console.log(result);
@@ -5,7 +7,7 @@ console.log(result);
 
 const message = prompt("Введiть свою почту");
 
-if (message.includes("@gmail.com")) {
+if (message.includes("@")) {
   console.log("OK");
 }
 

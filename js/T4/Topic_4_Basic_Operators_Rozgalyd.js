@@ -1,3 +1,5 @@
+console.log("Тема 4 Д\З!");
+
 const field1 = prompt("Заполните первое поле:");
 const field2 = prompt("Заполните второе поле:");
 
@@ -58,6 +60,8 @@ if (isNameValid && isEmailValid && isPasswordValid) {
   console.log(`Ваше ім'я: ${mamename}`);
   console.log(`Ваша пошта: ${email}`);
   console.log(`Ваш пароль: ${password}`);
-} else {
+} 
+
+else {
   console.log("Помилка: неправильне заповнення");
 }
