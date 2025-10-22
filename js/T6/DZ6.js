@@ -1,3 +1,4 @@
+// ЗАДАЧА 1
 let i = 0
 while (i < 10) { 
     i += 1
@@ -6,14 +7,17 @@ while (i < 10) {
 
 
 
-for (let i = 2; i <= 20; i += 1) {
-    if (i % 2 === 0) {
-        continue; 
+// ЗАДАЧА 2
+for (let i = 2; i <= 20; i++) {
+    if (i % 2 !== 0) { 
+        continue;
     }
     console.log(i);
 }
 
 
+
+// ЗАДАЧА 3
 const multiplier = 7;
 const limit = 10;
 
@@ -27,22 +31,33 @@ for (let i = 1; i <= limit; i++) {
 console.log('---------------------------');
 
 
+// Промiжуточний код
+console.log('--                       --');
+// Промiжуточний код 
 
+// ЗАДАЧА 4
+let currentNumber = 5; 
+const limet = 20;       
 
-const numbers = [5, 14.999, 9, 12, 14, 39535294, 12, 835, 20];
+console.log("---------------------------");
 
-for (const number of numbers) {
-    // Перевіряємо, чи поточне число більше або дорівнює 15
-    if (number >= 15) {
-        console.log(`Знайдено число ${number}, яке >= 15.`);
+while (currentNumber <= limet) {
+    
+    if (currentNumber >= 15) {
+        console.log(`Знайдено число ${currentNumber}, яке >= 15.`);
         break; 
     }
 
-    console.log(`Число: ${number}`);
+    console.log(`Число: ${currentNumber}`);
+    
+    currentNumber += 2; 
 }
 
+console.log("---------------------------");
 
 
+
+// ЗАДАЧА 5
 let q = 0;
 
 while (q < 20) {
@@ -54,6 +69,3 @@ while (q < 20) {
     
     console.log(q);
 }
-
-
-
