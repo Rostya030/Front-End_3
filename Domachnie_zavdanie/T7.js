@@ -1,57 +1,52 @@
-const title = "Top 10 Benefits Of React Fremework";
-const slug = title
-    .toLowerCase()
-    .split(' ')
-    .join('-')
-    .replace(/[^a-z0-9-]/g, '');
+// Завдання 1
+const task1Array = [1, 5, 9];
+task1Array[1] = 10;
+console.log('Завдання 1:', task1Array);
 
-console.log(slug);
+// Завдання 2
+const task2Array = ["Яблуко", "Банан", "Апельсин"];
+task2Array.push("Манго");
+console.log('Завдання 2:', task2Array);
 
+// Завдання 3
+const task3Array = [10, 5, 2, 3, 1];
+let totalSum = 0;
+for (const number of task3Array) {
+    totalSum += number;
+}
+console.log('Завдання 3:', totalSum);
 
-for (let i = 2; i <= 20; i++) {
-    if (i % 2 !== 0) { 
-        continue;
-    }
-    
-    console.log(i);
+// Завдання 4
+const task4Array = [100, 200, 300, 400, 500];
+console.log('Завдання 4:');
+for (let i = 0; i < task4Array.length; i += 1) {
+    console.log(task4Array[i]);
 }
 
-
-let q = 0;
-while (q < 20) {
-    q++;
-    
-    if (q % 3 === 0) {
-        continue;
-    }
-    
-    console.log(q);
-}
-
-
-const numbers = [1, 3, 5, 6, 7, "12", 5, "34"];
-let sum = 0;
-for (const element of numbers) {
-    if (typeof element === 'number') {
-        sum += element;
-    }
-}
-console.log(sum);
-
-
-let art = 20;
-for (let i = 2; i <= art; i += 1) { 
-    console.log(i);
-}
-
-
-const numbersArray = [51, 18, 13, 24, 7, 85, 19];
-let smallestNumber = numbersArray[0];
-
-for (let i = 0; i < numbersArray.length; i += 1) {
-    if ( smallestNumber > numbersArray[i] ) {
-        smallestNumber = numbersArray[i];
+// Завдання 5
+const task5Array = ["Море", "Сонечко", "Кіт", "Зірка", "Планета"];
+console.log('Завдання 5:');
+for (const word of task5Array) {
+    if (word.length > 5) {
+        console.log(word);
     }
 }
 
-console.log(smallestNumber);
+// Завдання 6
+const task6Array = [12, 5, 88, 3, 40, 99, 15, 2, 70, 9];
+let maxNumber = task6Array[0];
+for (const number of task6Array) {
+    if (number > maxNumber) {
+        maxNumber = number;
+    }
+}
+console.log('Завдання 6:', maxNumber);
+
+// Завдання 7
+const task7Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log('Завдання 7:');
+for (const number of task7Array) {
+    if (number % 2 === 0) {
+        console.log(number);
+    }
+}
